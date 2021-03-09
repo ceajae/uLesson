@@ -1,0 +1,71 @@
+.subject-chapters-wrap {
+    display: flex;
+    padding: 0px 200px 0px 89px;
+    margin-top: 129px;
+
+    @include responsive_mobile(){
+        padding: 0 50px;
+        display: block;
+    }
+
+    .back-icon {
+        cursor: pointer;
+        padding-top: 10px;
+
+        @include responsive_mobile(){
+            padding-bottom: 20px;
+            text-align: right;
+        }
+    }
+
+    .chapters-wrap {
+        flex: auto;
+        padding-left: 32px;
+
+        @include responsive_mobile(){
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .chapter-title {
+            line-height: 32px;
+            margin-top: 41px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .lessons-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+        gap: 14.53px;
+    }
+
+    .lesson-card {
+        background: $white;
+        border-radius: 18px;
+        padding: 30px 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: -1px 20px 18px 0px rgba(0, 0, 0, 0.15);
+
+        .lesson-icon {
+            width: 123px;
+            height: 126px;
+        }
+        .lesson-title {
+            text-align: center;
+            padding-top: 15px;
+            color: $dark_blue;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

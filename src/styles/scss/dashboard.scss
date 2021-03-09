@@ -1,0 +1,101 @@
+.dashboard {
+    padding: 0 200px;
+    margin-top: 129px;
+
+    @include responsive_mobile(){
+        padding: 0 50px;
+    }
+
+    h1 {
+        color: $dark_blue,
+    }
+    .subjects-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 13.38px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .subject-card {
+        color: $white;
+        background: $dark_orange;
+        border-radius: 16.575px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 23px 24px;
+        height: 100%;
+        min-height: 100px;
+        box-shadow: -1px 20px 18px 0px rgba(0, 0, 0, 0.15);
+        transition: transform .2s;
+
+        .subject-name {
+            line-height: 17.67px;
+            letter-spacing: 2.55px;
+            align-self: flex-end;
+            text-transform: uppercase;
+        }
+    }
+
+    .subject-card:hover {
+        transform: scale(1.134);
+    }
+
+    .recent-videos, .recomm-videos {
+        padding-top: 56px;
+    }
+
+    .recent-videos-header, .recomm-videos-header {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin-bottom: 22px;
+
+         h2 {
+             margin: 0;
+             color: $dark_blue;
+             letter-spacing: 0.2px;
+         }
+
+         & > button {
+             color: $white;
+             letter-spacing: 1.4px;
+             text-transform: uppercase;
+             padding: 8px 19px;
+             background: $dark_orange;
+             border-radius: 7px;
+             border: none;
+         }
+    }
+
+    .lessons-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+
+    .lesson-card {
+
+        .subject {
+            margin: 10px 0 15px 0;
+        }
+        .lesson-image {
+            height: 240px;
+            border-radius: 16.575px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -1px 20px 18px 0px rgba(0, 0, 0, 0.15);
+
+        }
+        .lesson-title {
+            text-transform: capitalize;
+            letter-spacing: 0.67px;
+            color: $dark_blue;
+        }
+
+    }
+}

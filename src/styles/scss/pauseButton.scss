@@ -1,0 +1,17 @@
+.pause-button {
+    background: $white;
+    height: 53px;
+    width: 48px;
+    border-radius: 29px 29px 38px 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pause-icon {
+      width: 6px;
+      height: 10px;
+      border-style: double;
+      border-width: 0px 0px 0px 10px;
+      border-color: $dark_orange;
+    }
+}

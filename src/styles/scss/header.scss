@@ -1,0 +1,25 @@
+.header {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 14px 80px 13px 52px;
+    background: $dark_blue;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+
+    @include responsive_mobile(){
+        padding: 14px;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        .avatar {
+            margin-right: 12px;
+        }
+    }
+}

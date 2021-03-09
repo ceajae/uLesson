@@ -1,0 +1,162 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+//itim regular
+.itim_regular_base {
+    font-family: 'Itim', sans-serif;
+}
+
+.itim_reg_48 {
+    @extend .itim_regular_base;
+    font-size: 48px;
+}
+
+.itim_reg_33 {
+    @extend .itim_regular_base;
+    font-size: 33px;
+}
+
+.itim_reg_28 {
+    @extend .itim_regular_base;
+    font-size: 28px;
+}
+
+//itim medium
+.itim_medium_base {
+    font-family: 'Itim', sans-serif;
+    font-weight: 500;
+}
+
+.itim_med_14 {
+    @extend .itim_medium_base;
+    font-size: 14px;
+}
+
+//itim bold
+.itim_bold_base {
+    font-family: 'Itim', sans-serif;
+    font-weight: 700;
+}
+
+.itim_bold_14 {
+    @extend .itim_bold_base;
+    font-size: 14px;
+}
+
+.itim_bold_12 {
+    @extend .itim_bold_base;
+    font-size: 12px;
+}
+
+
+//muli regular
+.muli_regular_base {
+    font-family: 'Muli', sans-serif;
+}
+
+.muli_reg_24 {
+    @extend .muli_regular_base;
+    font-size: 24px;
+}
+
+.muli_reg_22 {
+    @extend .muli_regular_base;
+    font-size: 22px;
+}
+
+.muli_reg_18 {
+    @extend .muli_regular_base;
+    font-size: 18px;
+}
+
+.muli_reg_16 {
+    @extend .muli_regular_base;
+    font-size: 16.5px;
+}
+
+.muli_reg_15 {
+    @extend .muli_regular_base;
+    font-size: 15.3px;
+}
+
+.muli_reg_14 {
+    @extend .muli_regular_base;
+    font-size: 14px;
+}
+
+//muli medium
+.muli_medium_base {
+    font-family: 'Muli', sans-serif;
+    font-weight: 500;
+}
+
+.muli_med_14 {
+    @extend .muli_medium_base;
+    font-size: 14px;
+}
+
+//muli bold
+.muli_bold_base {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+.muli_bold_22 {
+    @extend .muli_bold_base;
+    font-size: 22px;
+}
+
+.muli_bold_12 {
+    @extend .muli_bold_base;
+    font-size: 12px;
+}
+
+
+//mulish regular
+.mulish_regular_base {
+    font-family: 'mulish', sans-serif;
+}
+
+.mulish_reg_18 {
+    @extend .mulish_regular_base;
+    font-size: 18.5px;
+}
+
+.mulish_reg_14 {
+    @extend .mulish_regular_base;
+    font-size: 14px;
+}
+
+.mulish_reg_12 {
+    @extend .mulish_regular_base;
+    font-size: 12px;
+}
+
+//mulish medium
+.mulish_medium_base {
+    font-family: 'mulish', sans-serif;
+    font-weight: 500;
+}
+
+.mulish_med_14 {
+    @extend .mulish_medium_base;
+    font-size: 14px;
+}
+
+//mulish bold
+.mulish_bold_base {
+    font-family: 'mulish', sans-serif;
+    font-weight: 700;
+}
+
+.mulish_bold_20 {
+    @extend .mulish_bold_base;
+    font-size: 20px;
+}
+
+.mulish_bold_12 {
+    @extend .mulish_bold_base;
+    font-size: 12px;
+}

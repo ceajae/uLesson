@@ -1,0 +1,31 @@
+html {
+    background: #E5E5E5;
+}
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 100px;
+}
+p{
+   margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@import './_responsive_mixins';
+@import "./_typography";
+@import "./_colors";
+
+// components
+@import "./lessonVideo";
+@import "./dashboard";
+@import "./subject";
+
+@import "./pauseButton";
+@import "./playButton";
+@import "./header";
+@import "./loader";

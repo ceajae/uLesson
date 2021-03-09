@@ -1,0 +1,17 @@
+.play-button {
+    background: $white;
+    height: 53px;
+    width: 48px;
+    border-radius: 29px 29px 38px 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .play-icon {
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-left: 13px solid $dark_orange;
+        border-bottom: 6px solid transparent;
+    }
+}

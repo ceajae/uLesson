@@ -1,0 +1,146 @@
+.lesson-video-wrap {
+    display: flex;
+    padding-right: 200px;
+    padding-left: 89px;
+    margin-top: 66px;
+
+    @include responsive_mobile(){
+        padding: 0;
+        display: block;
+    }
+
+    .back-icon {
+        cursor: pointer;
+
+        @include responsive_mobile(){
+            padding-bottom: 20px;
+            text-align: right;
+        }
+    }
+
+    .lesson-video {
+        position: relative;
+        padding-left: 66px;
+        flex: auto;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+
+        @include responsive_mobile(){
+            padding: 0;
+        }
+
+
+        .video-react {
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100%;
+            position: relative;
+
+            .video-react-video {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .video-controls-wrap {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            height: 9%;
+            z-index:10;
+
+            .rewind, .pause-and-play, .forward {
+                height: 100%;
+                cursor: pointer;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        .video-react-control-bar, .video-react-big-play-button {
+            display: none;
+        }
+
+        .progress-bar-wrap {
+            position: absolute;
+            top: 90%;
+            left: 4%;
+            width: 90%;
+            font-size: 12px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .currentTime, .duration {
+                opacity: 0.6;
+            }
+        }
+
+        .progress-bar {
+            position: relative;
+            height: 5px;
+            width: 70%;
+            background: $pale_white
+          }
+
+        .progress-bar-filler {
+            background: $white;
+            height: 100%;
+            border-radius: inherit;
+            transition: width .2s ease-in;
+        }
+
+        .lesson-details {
+            color: $dark_blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 52px;
+
+            .lesson-title {
+                line-height: 28px;
+                letter-spacing: 0.4px;
+                text-align: center;
+            }
+            .chapter {
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                opacity: 0.5;
+                margin-top: 14px;
+                margin-bottom: 24px;
+            }
+
+            button {
+                color: $white;
+                background-color: $dark_orange;
+                padding: 14px 170px;
+                border-radius: 12px;
+                border: none;
+                text-transform: uppercase;
+                outline: none;
+
+                @include responsive_mobile(){
+                    padding: 14px 100px;
+                }
+            }
+        }
+    }
+
+}
+
+.react-responsive-modal-root {
+
+    .react-responsive-modal-closeButton {
+        display: none !important;
+    }
+    .react-responsive-modal-modal {
+        max-width: none !important;
+    }
+}
