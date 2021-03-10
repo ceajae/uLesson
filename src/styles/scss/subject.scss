@@ -1,10 +1,14 @@
 .subject-chapters-wrap {
     display: flex;
-    padding: 0px 200px 0px 89px;
-    margin-top: 129px;
+    padding: 129px 200px 100px 89px;
+    background-image: url('../../images/bg3.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 96% 102%;
 
     @include responsive_mobile(){
-        padding: 0 50px;
+        padding-left: 50px;
+        padding-right: 50px;
         display: block;
     }
 

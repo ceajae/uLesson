@@ -10,7 +10,7 @@ const SubjectCard = ({ data }) => {
     return(
         <Link to = {`/${id}`}>
             <span>
-                <div style={{backgroundColor: color}} className="subject-card muli_reg_15">
+                <div style={{backgroundColor: color}} className={`subject-card muli_reg_15 ${name.toLowerCase()}_card`}>
                     <div className="subject-icon">
                         <img src={icon} alt="icon" />
                     </div>

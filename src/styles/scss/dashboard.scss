@@ -1,9 +1,13 @@
 .dashboard {
-    padding: 0 200px;
-    margin-top: 129px;
+    padding: 129px 200px 100px 200px;
+    background-image: url('../../images/bg1.svg'), url('../../images/bg2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: left top, 105% 155%;
 
     @include responsive_mobile(){
-        padding: 0 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     h1 {
@@ -19,9 +23,34 @@
         }
     }
 
+    .biology_card {
+        background-image: url('../../images/bio_bg.svg');
+        background-repeat: no-repeat;
+        background-position: 102% 37%;
+    }
+    .mathematics_card {
+        background-image: url('../../images/maths_bg.svg');
+        background-repeat: no-repeat;
+        background-position: 92% -1%;
+    }
+    .physics_card {
+        background-image: url('../../images/phys_bg.svg');
+        background-repeat: no-repeat;
+        background-position: -4% 102%;
+    }
+    .chemistry_card {
+        background-image: url('../../images/chem_bg.svg');
+        background-repeat: no-repeat;
+        background-position: 66% 102%;
+    }
+    .english_card {
+        background-image: url('../../images/eng_bg.svg');
+        background-repeat: no-repeat;
+        background-position: -3% 102%;
+    }
+
     .subject-card {
         color: $white;
-        background: $dark_orange;
         border-radius: 16.575px;
         display: flex;
         flex-direction: column;
